@@ -1,0 +1,172 @@
+.d-block{
+    object-fit: cover;
+}
+.first-photo-container{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content:center;
+
+}
+
+.photo-text{
+    position: absolute;
+    color: red;
+    top: 25%;
+    left: 5%;
+    height: 300px;
+}
+.photo-text img{
+    position: absolute;
+    height:70px;
+    width: 70px;
+    top:40%;
+    left:40%;
+    transition: transform 1s;
+}
+.photo-text button{
+    position: absolute;
+    top:70%;
+    left:23%;
+    width: 200px;
+    height: 70px;
+}
+.photo-text h1{
+    color: white;
+    display: block;
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width: 575.98px) {  
+    .photo-text h1{
+        display: block;
+        margin-top: 10vh;
+        font-size:10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .photo-text button{
+        position: absolute;
+        top:35%;
+        left:10%;
+        width: 80px;
+        height: 50px;
+        font-size: 8px;
+    }
+    .photo-text img{
+        position: absolute;
+        height:30px;
+        width: 30px;
+        top:15%;
+        left:40%;
+        transition: transform 1s;
+        display: none;
+    }
+    .photo-text{
+        position: absolute;
+        color: red;
+        top: 0%;
+        left: 7%;
+        height: 300px;
+    
+    
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {  
+
+    .photo-text h1{
+        display: block;
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: 20px;
+      
+    }
+    .photo-text button{
+        position: absolute;
+        top:40%;
+        left:18%;
+        width: 150px;
+        height: 70px;
+    }
+    .photo-text img{
+        position: absolute;
+        height:50px;
+        width: 50px;
+        top:20%;
+        left:40%;
+        transition: transform 1s;
+    }
+    .photo-text{
+        position: absolute;
+        color: red;
+        top: 25%;
+        left: 5%;
+        height: 300px;
+    
+    
+    }
+
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) {   
+    .photo-text h1{
+        display: block;
+        font-size: 25px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .photo-text button{
+        position: absolute;
+        top:40%;
+        left:18%;
+        width: 150px;
+        height: 70px;
+    }
+    .photo-text img{
+        position: absolute;
+        height:50px;
+        width: 50px;
+        top:20%;
+        left:40%;
+        transition: transform 1s;
+    }
+    .photo-text{
+        position: absolute;
+        color: red;
+        top: 25%;
+        left: 5%;
+        height: 300px;
+    
+    
+    }
+}
+@media (min-width: 992px){ 
+    .photo-text{
+        position: absolute;
+        color: red;
+        top: 25%;
+        left: 5%;
+        height: 300px;
+    }
+    .photo-text img{
+        position: absolute;
+        height:70px;
+        width: 70px;
+        top:40%;
+        left:40%;
+        transition: transform 1s;
+    }
+    .photo-text button{
+        position: absolute;
+        top:70%;
+        left:23%;
+        width: 200px;
+        height: 70px;
+    }
+    .photo-text h1{
+        display: block;
+        font-size: 45px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+ }
+

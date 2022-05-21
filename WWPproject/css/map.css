@@ -1,0 +1,23 @@
+.maps{
+    height: 100vh;
+    width: 100%;
+}
+#mapsec{
+    display: none;
+}
+@keyframes showNav {
+    from {margin-top:-100%;}
+    to {margin: 0;}
+  }
+.maps iframe{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.map h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

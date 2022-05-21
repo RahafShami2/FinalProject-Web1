@@ -1,0 +1,49 @@
+
+#logoimg{
+    /* logo in the nav behine WWP */
+  height: 50px;
+  width: 50px;
+}
+#nav {
+      /* make the nav black */
+  background-color: black;
+  transition: top 0.5s;
+}
+#nav:hover{
+  opacity: 1;
+}
+
+#nav a{
+  /* make the links in nav white */
+  color: white;
+  margin-left: 50px;
+}
+#nav .nav-link:hover{
+    /* make the links in nav black and the background white */
+
+  color: black;
+  background-color: white;
+  border-radius: 2000px;
+} 
+#nav button{
+/* make menu button white */
+  background-color: white;
+}
+.navbar-nav {
+  /* make the menu in center */
+  text-align: center;
+}
+#logoimg:hover{
+    /* panda logo rotate كيوت مرة */
+  transform: rotate(360deg);
+  transition: transform 1s ;
+}
+.contact-us{
+
+}
+.contact-us h1{
+  
+}
+html{
+  overflow-x: hidden;
+}

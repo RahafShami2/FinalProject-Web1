@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="..\css\volnt.css">
+
+
+    <style>
+   
+    </style>
+    <title>Volunteering</title>
+  </head>
+
+  <body class="volbody" onload="set_calinder()">
+      
+       <section class="volsec1">
+           <div class="headtext">
+            <h3 id="logoo" onclick="location.href = 'firstpage.html';">WWP</h3>
+            <h4 id="steps">Step 1 / 3</h4>
+           </div>
+            <div id="form1" class="form1">
+                <div class="headtext2">
+                    <h3>Choose what you want to volunteer for</h3>
+                   </div>
+                   <div class="headtext3">
+                    <h3>Select at least one</h3>
+                   </div>
+                   <div class="lines">
+                <div class="line">
+                    <div class="square" onclick="bord(this)">
+                       <img src="..\resources\feeding.svg">
+                        <h1>feed panda</h1>  
+                    </div>
+                    <div class="square" onclick="bord(this)">
+                        <img src="..\resources\pet-care.svg">
+                         <h1>care panda</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\play.svg">
+                         <h1>play with panda</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\clean.svg">
+                         <h1>clean panda</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\clean-house.svg">
+                         <h1>clean panda house</h1>  
+                     </div>
+                </div>
+                <div class="line">
+                    <div class="square" onclick="bord(this)">
+                        <img src="..\resources\safe.svg">
+                         <h1>save panda</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+          
+                                      <img src="..\resources\truck.svg">
+                         <h1>Panda transport</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\trowel.svg">
+                         <h1>build houses</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\water.svg">
+                         <h1>Water the panda</h1>  
+                     </div>
+                     <div class="square" onclick="bord(this)">
+                        <img src="..\resources\sleep.svg">
+                         <h1>sleep with panda</h1>  
+                     </div>
+                </div>
+            </div>
+                <div id= "textbox" class="textbox c-error">
+                    <p>choices...</p> 
+                </div>
+
+                <button onclick="toform2()" type="button" class="btn btn-dark"><span>Continue</span></button>
+                <button onclick="canels()" type="button" class="btn btn-dark"><span>Cancel</span></button>
+
+
+              
+        </div>
+        <div   id="form2" class="form2">
+            <h1>
+                give us your information
+            </h1>
+            <div class="inputform">
+                <h3 id="namelabel">your name</h3>
+                <input id="inputname" type="text" name="name"  placeholder="Alan WWP" class="inputs">
+            </div>
+            <div class="inputform">
+                <h3  id="phonelabel">Phone Number</h3>
+                <input  id="inputphone" type="text" class="inputs" name="phone" id="" placeholder="599 123 456" >        
+                </div>
+                <div class="inputform">
+                    <h3  id="addresslabel">address</h3>
+                    <input id="inputaddress" type="text" class="inputs" name="address" id="" placeholder="Palestine-nablus"  >        
+                    </div>
+                    <button onclick="cheack()" type="button" class="btn btn-dark"><span>Continue</span></button>
+                    <button onclick="canels()" type="button" class="btn btn-dark"><span>Cancel</span></button>
+
+        </div>
+        <div  id="form3" class="form3 row">
+        <div class="lef col-lg-6">
+            <h3>WWP</h3>
+            <h1>volenteering days</h1>
+            <h4>
+                we will call you and after that :
+            </h4>
+            <ul>
+                <li>grap your items</li>
+                <li>ride your car</li>
+                <li>come to us</li>
+                <li>Have fun ._.</li>
+
+            </ul>
+            <div class="time-date-piker">
+
+                <div id="pikker" class="pikker">
+                    <h2 id="selectdates" class="pikkedtext">times and dates:</h2>
+
+                    <div id="piked" class="piked">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rig col-lg-6">
+            <h1 >Select a Dates & times</h1>
+            <div class="monthcontrole">
+                <div class="contr">
+                    <i class="fas fa-angle-left"  onclick="left()" ></i>
+                    <h3 id="month"></h3><h3 id="year">2020</h3>
+                    <i class="fas fa-angle-right" onclick="right()"></i>
+                </div>
+            </div>
+            <div class="days">
+                <h5>mon</h5>
+                <h5>TUE</h5>
+                <h5>WED</h5>
+                <h5>THU</h5>
+                <h5>FRI</h5>
+                <h5>SAT</h5>
+                <h5>SUN</h5>
+            </div>
+            <div class="row_of_days">
+            <div id="one1" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+            <div id="one2" class="day_circle"onclick="clicked(this)"><h1>1</h1></div>
+            <div id="one3" class="day_circle "onclick="clicked(this)"><h1>2</h1></div>
+            <div id="one4" class="day_circle "onclick="clicked(this)"><h1>3</h1></div>
+            <div id="one5" class="day_circle "onclick="clicked(this)"><h1>4</h1></div>
+            <div id="one6" class="day_circle "onclick="clicked(this)"><h1>5</h1></div>
+            <div id="one7" class="day_circle "onclick="clicked(this)"><h1>6</h1></div>
+            </div>
+
+            <div class="row_of_days">
+                <div id="one8" class="day_circle" onclick="clicked(this)"><h1>7</h1></div>
+                <div id="one9" class="day_circle "onclick="clicked(this)"><h1>8</h1></div>
+                <div id="one10" class="day_circle "onclick="clicked(this)"><h1>9</h1></div>
+                <div id="one11" class="day_circle "onclick="clicked(this)"><h1>10</h1></div>
+                <div id="one12" class="day_circle "onclick="clicked(this)"><h1>11</h1></div>
+                <div id="one13" class="day_circle "onclick="clicked(this)"><h1>12</h1></div>
+                <div id="one14" class="day_circle "onclick="clicked(this)"><h1>13</h1></div>
+            </div>
+                <div class="row_of_days">
+                    <div id="one15" class="day_circle "onclick="clicked(this)"><h1>14</h1></div>
+                    <div id="one16" class="day_circle "onclick="clicked(this)"><h1>15</h1></div>
+                    <div id="one17" class="day_circle "onclick="clicked(this)"><h1>16</h1></div>
+                    <div id="one18" class="day_circle "onclick="clicked(this)"><h1>17</h1></div>
+                    <div id="one19" class="day_circle "onclick="clicked(this)"><h1>18</h1></div>
+                    <div id="one20" class="day_circle "onclick="clicked(this)"><h1>19</h1></div>
+                    <div id="one21" class="day_circle"onclick="clicked(this)"><h1>20</h1></div>
+                </div>
+                <div class="row_of_days">
+                    <div id="one22" class="day_circle "onclick="clicked(this)"><h1>21</h1></div>
+                    <div id="one23" class="day_circle "onclick="clicked(this)"><h1>22</h1></div>
+                    <div id="one24" class="day_circle "onclick="clicked(this)"><h1>23</h1></div>
+                    <div id="one25" class="day_circle "onclick="clicked(this)"><h1>24</h1></div>
+                    <div id="one26" class="day_circle "onclick="clicked(this)"><h1>25</h1></div>
+                    <div id="one27" class="day_circle "onclick="clicked(this)"><h1>26</h1></div>
+                    <div id="one28" class="day_circle "onclick="clicked(this)"><h1>27</h1></div>
+                </div>
+                <div class="row_of_days">
+                    <div id="one29" class="day_circle "onclick="clicked(this)"><h1>28</h1></div>
+                    <div id="one30" class="day_circle "onclick="clicked(this)"><h1>29</h1></div>
+                    <div id="one31" class="day_circle "onclick="clicked(this)"><h1>30</h1></div>
+                    <div id="one32" class="day_circle "onclick="clicked(this)"><h1>31</h1></div>
+                    <div id="one33" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one34" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one35" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                </div>
+                <div class="row_of_days">
+                    <div id="one36" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one37" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one38" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one39" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+                    <div id="one40" class="day_circle "onclick="clicked(this)"><h1></h1></div>
+
+                </div>
+
+            <div id="times" class="times ">
+                <div class="time">
+                    <h6>8:00-9:00</h6>
+
+                </div>
+                <div class="time">
+                    <h6>9:00-10:00</h6>
+
+                </div>               
+                <div class="time">
+                    <h6>10:00-12:00</h6>
+
+                </div>
+                <div class="time">
+                    <h6>12:00-15:00</h6>
+
+                </div>
+
+
+            </div>
+            <button onclick="finished(this)" type="button" class="btn btn-dark"><span>Finish</span></button>
+            <button onclick="canels()" type="button" class="btn btn-dark"><span>Cancel</span></button>
+
+        </div>
+
+        </div>
+
+       </section>
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="..\js\firstpage.js"></script>
+    <script src="..\js\blog.js"></script>
+    <script src="..\js\vol.js"></script>
+
+    <script rc="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html

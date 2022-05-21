@@ -1,0 +1,304 @@
+html{
+background-color: black;
+}
+body{
+    background-color: black;
+
+}
+.allforms{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    height: fit-content;
+}
+.controls{
+margin-bottom: 0;
+padding-bottom: 0;
+background-color: black;
+
+    
+}
+.controls span{
+    display: inline-block;
+    margin-right: 25%;
+   float: right;
+   color: white;
+   font-size: 12px;
+   text-transform: capitalize;
+}
+.controls h1{
+    margin-left: 25%;
+    font-size: 30px;
+    float: left;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Gordita,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-transform: capitalize;
+}
+.form1{
+    background-color: whitesmoke;
+    border-radius: 3%;
+    height: fit-content;
+    width: 60%;
+    margin-left:20%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    animation-duration: 1s;
+
+}
+.form1 h1{
+    padding-top: 30px;
+    color: black;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Gordita,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-transform: capitalize;
+}
+.form1 p{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+
+}
+
+.prices{
+display: flex;
+justify-content: space-evenly;
+margin-top: 50px;
+
+}
+.price{
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    
+}
+.price:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,.14);
+
+}
+
+.inputprice{
+    height: 100px;
+    width: 100px;
+    margin: 20px 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 10px;
+    cursor: pointer;
+    border: 3px solid white;
+    padding-top: 30px;
+
+}
+input, select, textarea {
+    background-color: white;
+    border: none;
+
+}
+.inputprice input:hover{
+    border: none;
+}
+.inputprice input:focus{
+    border: none;
+}
+.price h6{
+font-size: 15px;
+}
+.botons{
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+}
+.botons button{
+    margin-top: 50px;
+    background-color: white !important;
+    color: black;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.botons button:hover{
+    background-color: black !important;
+    color: white;
+    border: 1px solid white;
+}
+.form2{
+    background-color: whitesmoke !important;
+    border-radius: 3%;
+    height: fit-content;
+    width: 60%;
+    margin-left:20%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    display: none;
+    animation-duration: 1s;
+
+    
+}
+#details{
+    padding-left:25% ;
+}
+#SelectNewsletter{
+    width: 100px;
+}
+.payments{
+
+    background-color: red;
+}
+.criditcard{
+
+    background-color: red;
+}
+.form3{
+    background-color: whitesmoke !important;
+    border-radius: 3%;
+    height:fit-content;
+    width: 60%;
+    margin-left:20%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    text-align:center;
+    display: none;
+    animation-duration: 1s;
+
+}
+.form3 h1{
+    padding-top: 30px;
+    color: black;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Gordita,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-transform: capitalize;
+}
+.payment{
+    padding-left: 35%;
+    margin-top: 30px;
+    
+}
+.cridit{
+    height: 120px;
+    width:200px ;
+    background-color: red;
+    cursor: pointer;
+
+}
+.cridit img{
+    width: 100%;
+    height: 100%;
+}
+.paypal{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    height: 120px;
+    width:200px ;
+    background-color: blue;
+    cursor: pointer;
+}
+.paypal img{
+    width: 100%;
+    height: 100%;
+}
+.cridit_card{
+    height: fit-content;
+    display: none;
+}
+.rows{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.labelField{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+.inputField{
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 2px;
+    background-color: white;
+    min-height: 30px;
+    border-radius: 5%;
+}
+.paySubmitcard{
+    margin-bottom: 50px;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    transition:    background-color 0.3s ;
+}
+.paySubmitcard:hover{
+    background-color: white;
+    color: black;
+}
+.visa{
+    height: 30px;
+    width: 30px;
+    display: inline;
+}
+
+.paypalsec{
+display: none;
+}
+@keyframes away {
+    from{
+       transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1500px);
+    }
+  }
+  @keyframes come {
+    from{
+       transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+  }

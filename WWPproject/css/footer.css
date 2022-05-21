@@ -1,0 +1,107 @@
+.foot{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.foot:before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../resources/star.jpg");
+    background-size: 100%;
+    background-position: 50% 50%;
+    z-index: -2;
+    filter:  grayscale(100%);
+}
+.foot h1{
+    font-size: 40px;
+    color: white;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.cantactus{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    display: none;
+    animation-duration: 1s;
+}
+
+.contact-form{
+    text-align: left;
+    border-radius: 3%;
+    width: fit-content;
+
+
+}
+.contact-form label{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.contact-form button{
+    background-color: black;
+    margin-top: 5%;
+}
+.lastthing{
+    height: 30vh;
+    padding-top: 50px;
+    text-align: center;
+    background-color: black;
+
+}
+.icons{
+ margin:0 0 0 0;
+ padding:0 0 0 0;
+}
+
+.icons i{
+ margin-right:40px;
+ font-size: 30px;
+ cursor: pointer;
+ color: white;
+ 
+}
+.lastthing h1{
+    color: white;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.lastthing small{
+    color :white;
+}
+.formbutton{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid white;
+    color :white;
+    margin-left: 45%;
+    margin-top:50px ;
+}
+.formbutton:hover{
+    background-color: white;
+    color: black;
+}
+
+@keyframes come {
+    from{
+       transform: translatex(500px);
+    }
+    to{
+        transform: translatex(0px);
+    }
+  }

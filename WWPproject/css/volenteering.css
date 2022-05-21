@@ -1,0 +1,383 @@
+.linkss{
+
+}
+
+.mainv{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.volenteering{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+.volenteering::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../resources/star.jpg");
+    background-size: 100%;
+    background-position: 50% 50%;
+    z-index: -2;
+    filter:  grayscale(100%);
+}
+.volenteering img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    float:right;
+    filter: grayscale(50%);
+}
+.cont {
+text-align: center;
+    height: 100%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:100px;
+
+}
+
+.volenteering h1{
+
+    font-size: 80px;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+}
+.volenteering h4{
+    margin-top:50px ;
+
+    font-size: 40px;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+
+}
+.volenteering button{
+    margin-top:50px ;
+   height: 70px;
+   width: 150px;
+   margin-left: 35%;
+   border: 2px solid white;
+   color: white;
+}
+.volenteering button:hover{
+    background-color: white;
+
+}
+.some_states{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    background: #000000;  /* fallback for old browsers */
+    position: relative;
+    z-index: 1;
+}
+.some_states::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../resources/star.jpg");
+    background-size: 100%;
+    background-position: 50% 50%;
+    z-index: -2;
+    filter:  grayscale(100%);
+}
+.some_states h1{
+    margin-top:50px ;
+
+    font-size: 50px;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.all_volenteers{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+.volenteer{
+    margin-top: 30px;
+    width: 22%;
+
+    height: fit-content;
+
+    background-color:#fffffb;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 10%;
+    transition: opacity 1s ease-in-out ;
+    transition: padding 0.5s;
+    box-shadow: 13px 15px #ffffff52;
+
+    margin-top: 130px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.volenteer:hover{
+    padding: 1px;
+}
+.volenteer h3{
+    font-family: "Comic Sans MS";
+    margin: 0.5rem;
+    margin-top: 15%;
+    padding: .5rem 0.5rem;
+    font-size: 30px;
+    font-weight: 1000;
+    line-height: 1;
+    -webkit-text-fill-color: #000000; /* Will override color (regardless of order) */
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.volenteer p{
+    height: 150px;
+    width: 100%;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    margin: 0.5rem;
+    padding: .6rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6e7076;
+    text-transform: uppercase;
+    border-radius: 50px;
+    
+}
+
+.vcircle{
+    position: absolute;
+    top: -70px;
+    left: -50px;
+    height: 130px;
+width: 130px;
+border-radius: 100%;
+box-shadow: 3px 4px #35343498;
+}
+.vcircle img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: fill;
+
+}
+.controle {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+.controle i{
+    margin: 10px;
+    font-size: 50px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+.controle i:hover{
+ color: red;
+}
+.container-fluid{
+    padding: 0px;
+    margin:0px;
+}
+.row{
+    padding: 0;
+    margin:0;
+}
+.blog button{
+    width: 200px;
+    height: 70px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.blog h1{
+}
+
+
+
+@media (max-width: 575.98px) {  
+    .volenteering h1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .volenteering h4{
+        font-size: 20px;    
+    }
+    .volenteering button{
+       margin-left: 25%;
+    }
+    .some_states h1{
+        font-size: 35px;
+    }
+
+
+    .all_volenteers{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .volenteer{
+        width: 85%;    
+
+    
+        margin-top: 130px;
+        margin-bottom: 10px;
+
+        position: relative;
+        margin-bottom: 50px;
+        padding: 1px;
+
+    }
+    .vcircle{
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        height: 110px;
+    width: 110px;
+    }
+    .blog h1{
+        font-size: 25px;
+    }
+
+ }
+
+
+
+
+
+ @media (min-width: 576px) and (max-width: 767.98px) {  
+    .volenteering h1{
+        font-size: 3rem;
+        width: 100%;
+    }
+    .volenteering h4{
+        font-size: 25px;
+    
+    }
+    .volenteering button{
+       margin-left: 38%;
+
+    }
+    .some_states h1{
+        font-size: 30px;
+
+    }
+
+
+    .all_volenteers{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .volenteer{
+        width: 70%;    
+        margin-top: 130px;
+        margin-bottom: 10px;
+
+        position: relative;
+        margin-bottom: 50px;
+        padding: 1px;
+
+    }
+    .vcircle{
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        height: 110px;
+    width: 110px;
+    }
+
+    .blog h1{
+        font-size: 35px;
+    }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {   
+
+    .volenteering h1{
+        font-size: 4rem;
+        width: 100%;
+    }
+    .volenteering h4{
+        font-size: 30px;
+    
+    }
+    .volenteering button{
+       margin-left: 38%;
+
+    }
+    .some_states h1{
+        font-size: 35px;
+
+    }
+
+
+    .all_volenteers{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .volenteer{
+        width: 50%;    
+        margin-top: 130px;
+        margin-bottom: 10px;
+
+        position: relative;
+        margin-bottom: 50px;
+        padding: 1px;
+
+    }
+    .vcircle{
+        position: absolute;
+        top: -70px;
+        left: -10px;
+        height: 110px;
+    width: 110px;
+    }
+    .blog h1{
+        font-size: 50px;
+    }
+}
+
